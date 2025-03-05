@@ -119,7 +119,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 border-t border-gray-300 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-600">2021 © DreamJob. All rights reserved.</p>
+          <p className="text-gray-600">2025 © DreamJob. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="text-gray-600 hover:text-blue-600">
               <i className="fab fa-facebook-f"></i>

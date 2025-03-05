@@ -16,6 +16,10 @@ import tuyen1 from "../../images/tuyen1.jpg";
 import tuyen2 from "../../images/tuyen2.jpg";
 import tuyen3 from "../../images/tuyen3.jpg";
 import tuyen5 from "../../images/tuyen5.png";
+import job1 from "../../images/job1.png";
+import job2 from "../../images/job2.png";
+import job3 from "../../images/job3.jpeg";
+import job4 from "../../images/job4.png";
 const contentStyle: CSSProperties = {
   height: "420px",
   color: "#fff",
@@ -452,6 +456,230 @@ const App: React.FC = () => {
             </h3>
           </div>
         </Carousel>
+      </div>
+      {/* *** hang6  */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "10px",
+        }}
+      >
+        <div className="font-semibold text-3xl ml-5 mt-3">Attractive Jobs</div>
+
+        <div>
+          <div
+            style={{ display: "flex", gap: "10px " }}
+            className="text-2xl mr-4 mt-3"
+          >
+            <div>See all</div>
+            <SlArrowLeftCircle />
+            <SlArrowRightCircle />
+          </div>
+        </div>
+      </div>
+      {/* *** */}
+      <div className="hang6 ">
+        <div style={{ display: "flex", gap: "10px" }}>
+          <Row className="ml-12">
+            <Col span={24} style={{ maxWidth: "400px" }}>
+              <div className="relative inline-block text-left">
+                <div>
+                  <button
+                    type="button"
+                    className="inline-flex w-full justify-center gap-x-1.5 rounded-lg bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                    id="menu-button"
+                    aria-expanded={sortOpen}
+                    aria-haspopup="true"
+                    onClick={toggleSortMenu}
+                  >
+                    Filter by: Location
+                    <svg
+                      className="-mr-1 h-5 w-5 text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                {sortOpen && (
+                  <div
+                    className="absolute z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="menu-button"
+                    tabIndex={-1}
+                  >
+                    <div className="py-1" role="none">
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-all"
+                        role="menuitem"
+                        tabIndex={-1}
+                      >
+                        Low to High
+                      </a>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-all"
+                        role="menuitem"
+                        tabIndex={-1}
+                      >
+                        High to Low
+                      </a>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </Col>
+          </Row>
+          <div>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <SlArrowLeftCircle
+                style={{ cursor: "pointer", fontSize: "24px" }}
+              />
+              <div style={{ display: "flex", gap: "10px", marginLeft: "10px" }}>
+                <button
+                  style={{
+                    padding: "0px 20px",
+                    backgroundColor: "blue",
+                    color: "white",
+                    borderRadius: "15px",
+                    border: "none",
+                  }}
+                >
+                  All
+                </button>
+                <button
+                  style={{
+                    padding: "0px 20px",
+                    backgroundColor: "lightgray",
+                    color: "black",
+                    borderRadius: "15px",
+                    border: "none",
+                  }}
+                >
+                  Hanoi
+                </button>
+                <button
+                  style={{
+                    padding: "7px 20px",
+                    backgroundColor: "lightgray",
+                    color: "black",
+                    borderRadius: "15px",
+                    border: "none",
+                  }}
+                >
+                  Ho Chi Minh City
+                </button>
+                <button
+                  style={{
+                    padding: "0px 20px",
+                    backgroundColor: "lightgray",
+                    color: "black",
+                    borderRadius: "15px",
+                    border: "none",
+                  }}
+                >
+                  Da Nang
+                </button>
+              </div>
+              <SlArrowRightCircle
+                style={{
+                  cursor: "pointer",
+                  fontSize: "24px",
+                  marginLeft: "10px",
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+        {/* Hàng 1 */}
+        <div style={{ display: "flex", gap: "20px" }}>
+          <div className="job-card">
+            <div className="canngang">
+              <img src={job1} alt="Company Logo" className="company-logo" />
+              <div className="job-info">
+                <div className="job-title">Graphic Designer Junior HCM</div>
+                <div className="company-name">
+                  YOMARKER ADVERTISING COMPANY LIMITED
+                </div>
+              </div>
+            </div>
+            <div className="job-description">Accounts Receivable</div>
+            <div className="job-details">
+              <div className="location">Hanoi</div>
+              <div className="salary">10 - 20 Million</div>
+            </div>
+          </div>
+
+          <div className="job-card">
+            <div className="canngang">
+              <img src={job2} alt="Company Logo" className="company-logo" />
+              <div className="job-info">
+                <div className="job-title">Accounts Receivable</div>
+                <div className="company-name">
+                  Tien Tien Distribution Co., Ltd.
+                </div>
+              </div>
+            </div>
+            <div className="job-description">Agreement - Ho Chi Minh</div>
+            <div className="job-details">
+              <div className="location">Ho Chi Minh</div>
+              <div className="salary">8 - 10 million</div>
+            </div>
+          </div>
+        </div>
+
+        {/* *** 2 */}
+        <div style={{ display: "flex", gap: "20px" }}>
+          <div className="job-card">
+            <div className="canngang">
+              <img src={job3} alt="Company Logo" className="company-logo" />
+              <div className="job-info">
+                <div className="job-title">Primary School Teacher</div>
+                <div className="company-name">
+                  VIETNAM AUSTRALIA INTERNATIONAL EDUCATION JOINT STOCK COMPANY
+                </div>
+              </div>
+            </div>
+            <div className="job-description">Full-time - Da Nang</div>
+            <div className="job-details">
+              <div className="location">Da Nang</div>
+              <div className="salary">Agreement</div>
+            </div>
+          </div>
+
+          <div className="job-card">
+            <div className="canngang">
+              <img src={job4} alt="Company Logo" className="company-logo" />
+              <div className="job-info">
+                <div className="job-title">
+                  Ielts Teacher (Part-Time) Working in Dong Da, Hanoi -
+                  Attractive Income with Final ...
+                </div>
+                <div className="company-name">
+                  VINGO ACADEMY COMPANY LIMITED
+                </div>
+              </div>
+            </div>
+            <div className="job-description">Contract - Ho Chi Minh</div>
+            <div className="job-details">
+              <div className="location">Ho Chi Minh</div>
+              <div className="salary">Agreement</div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

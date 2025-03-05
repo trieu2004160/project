@@ -25,7 +25,6 @@ const navigation: NavigationItem[] = [
   { name: "Home", href: "/", current: false },
   { name: "Find Job", href: "/find-job", current: false },
   { name: "Find Employer", href: "/find-employer", current: false },
-  { name: "Dashboard", href: "/dashboard", current: false },
   { name: "Customer Support", href: "/support", current: false },
 ];
 
